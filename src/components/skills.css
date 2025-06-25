@@ -1,0 +1,44 @@
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#skills h1{
+    text-align: center;
+    color: darkorchid;
+    font-size: 35px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+#skills h2{
+    text-align: center;
+    font-size: 27px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.front{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    border: 2px solid darkorchid;
+    margin-top: 20px;
+    border-radius: 20px;
+    border-top: 10px solid darkorchid;
+    border-left: 10px solid darkorchid;
+}
+.front p{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+@media screen and (max-width:480px) {
+    .front{
+        flex-direction: column;
+        height: 300px;
+    }
+    .front p{
+        padding: 10px;
+    }
+}

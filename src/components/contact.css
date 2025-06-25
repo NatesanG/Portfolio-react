@@ -1,0 +1,75 @@
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact h1{
+    color: darkorchid;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+.socials{
+    width: 60%;
+    height: 50px;
+    border: 1px solid darkorchid;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.fa-instagram,
+.fa-linkedin,
+.fa-envelope{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-instagram a{
+    font-size: 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: darkorchid;
+}
+.fa-linkedin a{
+    font-size: 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: darkorchid;
+}
+.fa-envelope a{
+    font-size: 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: darkorchid;
+    font-weight: 400;
+    text-decoration: none;
+}
+@media screen and (max-width:480px) {
+    .socials{
+        height: 500px;
+        flex-direction: column;
+    }
+.fa-instagram,
+.fa-linkedin,
+.fa-envelope{
+    flex-direction: column;
+}
+
+.fa-instagram a{
+    font-size: 11px;
+    margin-top: 10px;
+}
+.fa-linkedin a{
+    font-size: 11px;
+    margin-top: 10px;
+}
+.fa-envelope a{
+    font-size: 11px;
+    margin-top: 10px;
+}
+}

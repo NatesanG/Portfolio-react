@@ -1,0 +1,87 @@
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid darkorchid;
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+    background-color: white;
+}
+nav h1{
+    margin: 10px;
+    font-size: 35px;
+    color: darkorchid;
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .3s all ease;
+}
+nav ul li a:hover{
+    color: darkorchid;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.fa-bars{
+    display: none;
+}
+.dark{
+    width: 50px;
+    height: 50px;
+    border: 2px solid darkorchid;
+    border-radius: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.dark:hover{
+    color: darkorchid;
+    background-color: black;
+} 
+
+@media screen and (max-width:480px) {
+    .fa-bars{
+        display: flex;
+        margin: 25px;
+        font-size: 20px;
+    }
+    .navs{
+        display: none;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 80px;
+        margin-left: 200px;
+        background-color: white;
+        position: absolute;
+    }
+    .navs.active{
+        display: flex;
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        .navbar ul li a{
+            display: none;
+        }
+        .fa-bars{
+            display: flex;
+        }
+    }
+}
